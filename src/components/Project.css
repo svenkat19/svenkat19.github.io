@@ -1,0 +1,213 @@
+/* General Styling for Project Section */
+.project-section {
+    padding: 60px 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 500px;
+  }
+  
+  .project-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #f0f0f0;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Project List Container */
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  /* Individual Project Item */
+  .project-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1800px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: rgba(47, 48, 48, 0.75);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.5)); /* Blue glow effect */ 
+  }
+  
+  /* Project Year Styling */
+  .project-year {
+    width: 20%;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    border-right: 1px solid #444;
+    padding-right: 20px;
+  }
+  
+  .project-year p {
+    margin: 0;
+  }
+  
+  /* Project Details Styling */
+  .project-details {
+    width: 80%;
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .project-role {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .project-company {
+    font-weight: normal;
+    font-size: medium;
+    color: #007bff; /* Light purple accent for company */
+  }
+  
+  .project-description {
+    margin-bottom: 16px;
+    color: #cccccc;
+  }
+  
+  /* Technologies Badges */
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .technology-badge {
+    display: inline-block;
+    background-color: #282828;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    color: #007bff; /* Accent color for badges */
+    transition: background-color 0.3s ease;
+  }
+  
+  .technology-badge:hover {
+    background-color: #007bff;
+    filter: drop-shadow(0 0 5px rgba(0, 123, 255, 1)); /* Blue glow effect */
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .project-year {
+      width: 100%;
+      border-right: none;
+      padding-right: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .project-details {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 1s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.25s ease;
+  }
+  
+  /* Project Year Styling */
+  .project-year {
+    width: 20%;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #a0a0a0;
+    border-right: 1px solid #444;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column; /* Keep the column layout */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  /* Ensure that the logo has no additional alignment issues */
+  .project-logo {
+    width: 4rem; /* Adjust size as needed */
+    height: 4rem;
+    margin-top: 10px; /* Space between year and logo */
+    /* Optional: add this line if you want the logo to have a margin to the left */
+    margin-left: 0; /* Ensure logo does not have margin-left, or adjust as needed */
+    border-radius: 8px; /* Adjust this value for more or less rounding */
+    object-fit: cover;  /* Ensures the image covers the area properly */
+  }
+  
+  /* Optional: Add this rule if needed for a container to ensure alignment */
+  .project-year p {
+    margin: 0; /* Ensure no margin on year text */
+    /* Optional: adjust text alignment for consistency */
+  
+    text-align: left; /* Ensure text aligns to left */
+  }
+  /* Project Year Styling */
+  .project-year {
+    width: 20%;
+    text-align: left;
+    font-size: 1.25rem; /* Existing style */
+    color: #a0a0a0;
+    border-right: 1px solid #444;
+    padding-right: 20px;
+    
+  }
+  
+  .project-year-text { /* New class for year text */
+    font-size: .6rem; /* Reduce size to 5px */
+    margin: 0; /* Ensure no margin */
+  }
+  
+  /* Project Year Styling */
+  .project-year {
+    width: 45%;
+    text-align: left;
+    font-size: 1.25rem;
+    color: #ffffff;
+    border-right: 1px solid #444;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem; /* Add gap between logo and year */
+  }
+  
+  /* Ensure that the logo has no additional alignment issues */
+  .project-logo {
+    width: 25rem; /* Adjust size as needed */
+    height: 20rem;
+    margin-left: 0; /* No margin-left */
+    border-radius: 8px; /* Adjust this value for more or less rounding */
+    object-fit: cover;  /* Ensures the image covers the area properly */
+  }
+  
+  .project-description {
+    list-style-type: disc;
+    margin-left: 20px; /* Indentation for bullet points */
+    color: #cccccc;
+  }

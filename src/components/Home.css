@@ -1,0 +1,121 @@
+/* Full page setup */
+.full-page {
+  height: 100vh; /* Full height for each section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 2rem;
+}
+
+/* Specific styling for satisfy-regular */
+
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Introduction image styling */
+img {
+  height: 35rem;
+  width: 26rem;
+  object-fit: cover;
+  margin-left: 30rem; /* Keeping your original margin */
+}
+
+/* About, Skills, Experience, and Projects sections */
+.about, .skills, .experience, .projects, .certifications {
+  /* Keeping your existing background and section styling */
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  background-image: url('/public/dark-gradient-background-with-copy-space/rm218-bb-07.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  height: 110vh;
+  width: 100vw;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* General styling for all sections */
+.content {
+  max-width: 1000px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  scroll-snap-type: y mandatory;
+}
+
+/* Social Links (Find Me Section) */
+.find-me {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  margin: 0 15px;
+}
+
+.light-icon {
+  color: white; /* Set the icon color to white or any light color */
+  transition: color 0.3s, text-shadow 0.3s, filter 0.3s, transform 0.3s; /* Smooth transition */
+  text-shadow: 
+    0 1px 0 rgba(0, 0, 0, 0.5), /* Bottom shadow */
+    0 2px 0 rgba(0, 0, 0, 0.4), /* Slightly lower shadow */
+    0 3px 0 rgba(0, 0, 0, 0.3); /* Further shadow for depth */
+}
+
+.social-links a:hover .light-icon {
+  color: #007bff; /* Change the icon color on hover */
+  filter: drop-shadow(0 0 5px rgba(0, 123, 255, 1)); /* Blue glow effect */
+  transform: scale(1.2); /* Magnification effect on hover */
+}
+
+/* Flex container styling */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reused styling */
+.social-links a {
+  margin: 0 10px;
+}
+
+.find-me {
+  text-align: center;
+}

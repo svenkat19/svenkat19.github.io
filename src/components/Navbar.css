@@ -1,0 +1,133 @@
+/* Navbar container styles */
+.navbar {
+  background-color: rgba(255, 255, 255, 0); /* Optional: Translucent background */
+}
+
+/* Navigation link container */
+.nav-link-container {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+
+/* Add space between icon and text */
+.nav-link-container img {
+  margin-right: 0.5rem; /* Add some space between the icon and the text */
+}
+
+/* Navigation link styles */
+.nav-link {
+  color: white; /* Set default text color to white */
+  text-decoration: none;
+  padding: 10px 15px; /* Padding for a box-like appearance */
+  margin-right: 1.5rem; /* Increase space between buttons */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Remove other property transitions */
+  background-color: transparent; /* Ensure consistent background before hover */
+  border-radius: 5px; /* Ensure consistent rounded corners */
+  font-weight: bold; /* Set font weight to bold by default to avoid shifting */
+}
+
+/* Hover effect: Box becomes white, text becomes black */
+.nav-link:hover {
+  background-color: white; /* Box turns white */
+  color: black !important; /* Force the text color to black */
+  /* No font-weight change here */
+  border-radius: 5px; /* Keep the border radius consistent */
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.1); /* Translucent background */
+  backdrop-filter: blur(2px); /* Optional: Add blur for a more translucent effect */
+  opacity: 1; /* Keep overall element at full opacity */
+}
+
+/* Dropdown menu item styles */
+.dropdown-menu .dropdown-item {
+  color: white !important; /* Keep text fully visible */
+}
+
+/* Background for dropdown menu */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Background opacity */
+  z-index: -1; /* Keep background behind the text */
+}
+
+/* Disabled link styles */
+.navbar .nav-link.disabled {
+  color: gray !important; /* Keep disabled links gray */
+}
+
+/* Icon size in navigation links */
+img {
+  width: 1.5rem;
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  gap: 15px; /* Space between the icons */
+  align-items: center; /* Align icons vertically */
+}
+
+/* .navbar-right {
+  margin-top: 0.5rem;
+}
+
+.navbar-right a {
+  margin: 0 15px;
+} */
+
+.light-icon {
+  color: white; /* Set the icon color to white or any light color */
+  transition: color 0.3s, text-shadow 0.3s, filter 0.3s, transform 0.3s; /* Smooth transition */
+  text-shadow: 
+    0 1px 0 rgba(0, 0, 0, 0.5), /* Bottom shadow */
+    0 2px 0 rgba(0, 0, 0, 0.4), /* Slightly lower shadow */
+    0 3px 0 rgba(0, 0, 0, 0.3); /* Further shadow for depth */
+}
+
+.navbar-right a:hover .light-icon {
+  color: #007bff; /* Change the icon color on hover */
+  filter: drop-shadow(0 0 5px rgba(0, 123, 255, 1)); /* Blue glow effect */
+  transform: scale(1.2); /* Magnification effect on hover */
+}
+
+/* Flexbox for the navbar content */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;  /* Space between left (logo) and right (links) */
+  align-items: center;
+  width: 100%;
+}
+
+/* Left-aligned logo */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px; /* Adjust as needed */
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Right-aligned social links */
+.navbar-right {
+  display: flex;
+  gap: 15px;  /* Space between the icons */
+  align-items: center;
+  margin-right: 10px; /* Adjust to add space from the right */
+}
+
+/* Translucent background styling for the navbar
+.navbar-translucent {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 10px 20px;
+}*/
